@@ -2,15 +2,15 @@
 import './App.css'
 
 import Navbar from './components/Navbar'
-import MobileMenu from './components/MobileMenu'
+import HeroArea from './components/Hero'
 function App() {
  
 
   return (
     <>
  <Navbar/> 
-   
- <MobileMenu/>
+   <HeroArea/>
+ 
 
     </>
   )
