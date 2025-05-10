@@ -3,6 +3,7 @@ import './App.css'
 
 import Navbar from './components/Navbar'
 import HeroArea from './components/Hero'
+import ImageCardSection from './components/ImageCardSection'
 function App() {
  
 
@@ -10,7 +11,7 @@ function App() {
     <>
  <Navbar/> 
    <HeroArea/>
- 
+ <ImageCardSection/>
 
     </>
   )

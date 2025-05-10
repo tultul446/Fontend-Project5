@@ -11,7 +11,7 @@ const [activity, setActivity] = useState("")
 
 
   return (
-    <section className='bg-cover bg-center h-screen flex items-center justify-center text-white'  style={{ backgroundImage:"url('/hero.png')"}}>
+    <section className=' bg-cover bg-center h-screen flex items-center justify-center text-white'  style={{ backgroundImage:"url('/hero.png')"}}>
       <div className='container lg:w-[80%] mx-auto px-3'>
        <h1 className='text-3xl md:text-3xl lg:text-5xl md:w-[30%]  lg:w-[50%] font-bold py-7 lg:py-10 px-10 text-white leading-tight'>Find amazing things to do anytime, anywhere in Lagos.</h1>
 
