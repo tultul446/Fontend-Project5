@@ -40,7 +40,7 @@ const ThingsToDo = () => {
 
   <div className='container p-4 mx-auto'>
 
-      <h1 className='text-[#26395C] text-center lg:text-start   mt-7 px-5 py-4 mb-8 text-[32px] ml-3 '>Top things to do in Lagos
+      <h1 className='text-[#26395C]  text-center lg:text-start   mt-7 px-5 py-4 mb-8 text-[32px] font-semibold ml-3 '>Top things to do in Lagos
 </h1>
 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 mb-8 container mx-auto p-6 '>
 {
