@@ -6,6 +6,7 @@ import HeroArea from './components/Hero'
 import ImageCardSection from './components/ImageCardSection'
 import ThingsToDo from './components/ThingsToDo'
 import Chillsbay from './components/Chillsbay'
+import Carousel from './components/Carousel'
 function App() {
  
 
@@ -16,6 +17,7 @@ function App() {
  <ImageCardSection/>
 <ThingsToDo/>
 <Chillsbay/>
+<Carousel/>
     </>
   )
 }

@@ -28,10 +28,10 @@ and ticket transfer`,
       <h1 className='text-center text-#26395C] text-2xl   lg:text-[42px] font-semibold mt-16 mb-10 '>Why Use Chillsbay?</h1>
       <div className='container bg-[#F5FAFF] grid grid-cols-1 lg:grid-cols-3 mx-auto mt-10 mb-10 p-12 rounded-2xl shadow-xl'>
       {CardInfo.map((info, i) => (
-        <div key={i} className='w-[60%] mx-auto mt-4  lg:mt-5'>
+        <div key={i} className='lg:w-[60%] mx-auto mt-4  lg:mt-5'>
        <img src={info.Logo} alt="" className=' lg:w-[82px] h-[82px]' />
-       <h2 className='w-[288px]  text-3xl font-semibold text-[#000000]'>{info.title}</h2>
-       <p className='w-[317.5px] h-[102px] mt-4 text-sm text-[#000000]'>{info.des}</p>
+       <h2 className='lg:w-[288px] text-xl lg:text-3xl font-semibold text-[#000000]'>{info.title}</h2>
+       <p className='w-full lg:w-[317.5px] h-[102px] mt-4 text-sm text-[#000000]'>{info.des}</p>
         </div>
       ))
 
