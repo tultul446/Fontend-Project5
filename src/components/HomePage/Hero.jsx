@@ -12,8 +12,8 @@ const [activity, setActivity] = useState("")
 
   return (
     <section className=' bg-cover bg-center h-screen flex items-center justify-center text-white'  style={{ backgroundImage:"url('/hero.png')"}}>
-      <div className='container lg:w-[80%] mx-auto px-3'>
-       <h1 className='text-3xl md:text-3xl lg:text-5xl md:w-[30%]  lg:w-[50%] font-bold py-7 lg:py-10 px-10 text-white leading-tight'>Find amazing things to do anytime, anywhere in Lagos.</h1>
+      <div className='container lg:w-[90%] mx-auto px-3 lg:mb-8'>
+       <h1 className='text-xl md:text-3xl lg:text-5xl md:w-[30%]  lg:w-[50%] font-bold py-5 lg:py-6 px-10 text-white leading-tight'>Find amazing things to do anytime, anywhere in Lagos.</h1>
 
        <div className='bg-[#FBFCFF]   lg:w-[650px] lg:h-[130px] py-5  lg:py-10 px-5 lg:px-10 ms-10 rounded-xl shadow-lg flex flex-col md:flex-row gap-4 items-center justify-between'>
        

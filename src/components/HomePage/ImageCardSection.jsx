@@ -26,9 +26,9 @@ const ImageCardSection = () => {
 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-5 mb-8 container mx-auto p-6 '>
 {
   cards.map((card, i) => (
-    <div key={i} className='flex flex-col items-center overflow-hidden'>
-       <img className='w-full h-[500px] lg:h-[650px]' src={card.ImgSrc} alt="" />
-       <h2 className='text-[#26395C]  text-[32px] font-semibold'>{card.title}</h2>
+    <div key={i} className='flex flex-col items-center overflow-hidden '>
+       <img className='w-full ' src={card.ImgSrc} alt="" />
+       <h2 className=' text-[#26395C]  text-[32px] font-semibold'>{card.title}</h2>
     </div>
   ))
 }

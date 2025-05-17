@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import BasicModal from "./HomePage/Model";
+import { NavLink } from "react-router";
 export default function MobileMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,8 +11,10 @@ export default function MobileMenu() {
   <>
       <div className=" md:hidden  max-w-7xl mx-auto px-2  flex items-center justify-between mb-5">
         {/* Logo */}
-        <img src="./Group.png" alt="" className="-ml-6 "/>
 
+        <NavLink to="/">
+        <img src="./Group.png" alt="" className="-ml-6 "/>
+       </NavLink>
         {/* Hamburger Menu Button */}
         <div className="md:hidden -mt-25 mr-4">
           <button onClick={toggleMenu}>
@@ -27,11 +30,19 @@ export default function MobileMenu() {
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg  space-y-4 ml-3">
           <ul className="space-y-3">
-            <li className="hover:text-blue-500">Eat & Drink</li>
+           
+              <NavLink to="/Drink"  style={({ isActive }) => ({
+    color: isActive ? "blue" : "black",
+  })} >
+              Eat & Drink
+              </NavLink>
+             
             <li className="hover:text-blue-500">Events</li>
             <li className="hover:text-blue-500">Club</li>
             <li className="hover:text-blue-500">Things to do</li>
-            <li className="hover:text-blue-500">Account</li>
+            <nav className="hover:text-blue-500"> <div className="ml-auto">
+            <BasicModal/>
+          </div></nav>
          </ul>
          <div className="w-full h-[2px] bg-gray-400"></div>
          <ul className="space-y-3">
