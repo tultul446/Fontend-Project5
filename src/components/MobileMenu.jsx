@@ -38,7 +38,14 @@ export default function MobileMenu() {
               </NavLink>
              
             <li className="hover:text-blue-500">Events</li>
-            <li className="hover:text-blue-500">Club</li>
+            <li className="hover:text-blue-500">
+          <NavLink 
+          to="/ClubPage"  style={({ isActive }) => ({
+    color: isActive ? "blue" : "black",
+  })}>
+              Club
+</NavLink>
+              </li>
             <li className="hover:text-blue-500">Things to do</li>
             <nav className="hover:text-blue-500"> <div className="ml-auto">
             <BasicModal/>
