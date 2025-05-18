@@ -2,15 +2,16 @@ import React, { useState } from 'react'
 
 
 
-const HeroArea = () => {
+
+ const HeroArea = () => {
 const [location, setLocation] = useState("");
 const [date, setDate ] = useState("");
 const [activity, setActivity] = useState("")
 
 
-
-
   return (
+   
+
     <section className=' bg-cover bg-center h-screen flex items-center justify-center text-white'  style={{ backgroundImage:"url('/hero.png')"}}>
       <div className='container lg:w-[90%] mx-auto px-3 lg:mb-8'>
        <h1 className='text-xl md:text-3xl lg:text-5xl md:w-[30%]  lg:w-[50%] font-bold py-5 lg:py-6 px-10 text-white leading-tight'>Find amazing things to do anytime, anywhere in Lagos.</h1>
@@ -60,17 +61,7 @@ const [activity, setActivity] = useState("")
         </button>
 
 
-
-
-
-
-
        </div>
-
-
-
-
-
 
       </div>
     </section>
