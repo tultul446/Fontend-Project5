@@ -76,7 +76,7 @@ const MenuSection = ({title, menus}) => {
         {/* left side*/}
 
 
-        <div className='sm:ml-34 lg:ml-18 p-2 mb-4'>
+        <div className='sm:ml-34 lg:ml-9 p-2 mb-4 lg:-mt-34'>
          <img src={logo} alt=""  />
          <p className='text-[#26395C] text-[15px] font-sm mb-4'>{copyRight}</p>
          <div className='flex  space-x-4'>

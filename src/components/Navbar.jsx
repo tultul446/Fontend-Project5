@@ -64,7 +64,13 @@ import { NavLink } from "react-router";
           </li>
 
           {/* Cart Icon */}
-          <li className="text-xl cursor-pointer text-[#26395C] ">🛒</li>
+          <li className="text-xl cursor-pointer text-[#26395C] ">
+              <NavLink to="/PayModel"  style={({ isActive }) => ({
+    color: isActive ? "blue" : "black",
+  })} >
+            🛒
+           </NavLink> 
+            </li>
 
           {/* Dropdown: Account */}
          <li >

@@ -36,16 +36,27 @@ export default function MobileMenu() {
   })} >
               Eat & Drink
               </NavLink>
-             
+            
+
+
             <li className="hover:text-blue-500">Events</li>
             <li className="hover:text-blue-500">
           <NavLink 
-          to="/ClubPage"  style={({ isActive }) => ({
-    color: isActive ? "blue" : "black",
-  })}>
+               to="/ClubPage"  style={({ isActive }) => ({
+              color: isActive ? "blue" : "black",
+           })}>
               Club
-</NavLink>
+        </NavLink>
               </li>
+
+         <li className="text-xl cursor-pointer text-[#26395C] ">
+              <NavLink to="/PayModel"  style={({ isActive }) => ({
+           color: isActive ? "blue" : "black",
+         })} >
+            🛒
+           </NavLink> 
+            </li>
+
             <li className="hover:text-blue-500">Things to do</li>
             <nav className="hover:text-blue-500"> <div className="ml-auto">
             <BasicModal/>
@@ -56,6 +67,7 @@ export default function MobileMenu() {
             <li className="hover:text-blue-500">My Profile</li>
             <li className="hover:text-blue-500">Pay With Crypto</li>
             <li className="hover:text-blue-500">Cart</li>
+            
             <li className="hover:text-blue-500">Contact Us</li>
             <li className="hover:text-blue-500">Log Out</li>
           </ul>
