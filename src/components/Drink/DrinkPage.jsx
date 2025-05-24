@@ -12,11 +12,12 @@ const DrinkPage = () => {
     <>
      <DrinkHero/> 
      <FindPlace/>
-     <RestaurantCard title="Popular restuarants in Lagos"/>
+     <RestaurantCard api='/Club-data.json'
+      title="Popular restuarants in Lagos"/>
     
      <DrinkCarousel/>
      {/* <NearBy/> */}
-      <RestaurantCard title="Resturants nearby"/>
+      <RestaurantCard api='/Club-data.json' title="Resturants nearby"/>
 
       <MapPage/>
     </>

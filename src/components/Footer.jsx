@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
+
+import { cn } from '../lib/utils';
 const footerData = {
      socialIcon : [
        "./facebook1.png",
@@ -67,7 +69,7 @@ const MenuSection = ({title, menus}) => {
 
 
 
-  function Footer()  {
+  const Footer = (isDark) =>  {
   const {socialIcon, sections, partnerSection, logo, copyRight} = footerData;
    
   return (
@@ -108,10 +110,10 @@ const MenuSection = ({title, menus}) => {
 
 
       {/* right side */}
-     <div className=''>
-       <div  className='sm:ml-36  lg:ml-0 w-[298px] bg-[#F5FAFF]  h-fit rounded-lg p-5  '>
+     <div   className={cn("sm:ml-36  lg:ml-0 w-[298px] bg-[#F5FAFF]  h-fit rounded-lg p-5", isDark && "bg-[#9A9FBF1A] " ) }>
+       <div>
         <img src={partnerSection.image} alt="" className='px-4'/>
-        <h2 className='text-[22px] text-[#26395C] font-bold px-1'>{partnerSection.title}</h2>
+        <h2 className={cn("text-[22px] text-[#26395C] font-bold px-1", isDark && "text-[#969DAA]" )}>{partnerSection.title}</h2>
         <p className='text-[#656B89] text-[16px] px-1 py-4'>{partnerSection.des}</p>
 
           <div>

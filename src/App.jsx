@@ -10,27 +10,29 @@ import DrinkPage from './components/Drink/DrinkPage.jsx';
 import HomePage from './components/HomePage/Index.jsx';
 import ClubPage from './components/ClubPage/Club.jsx'
 import Payment from './components/PayModel/Payment.jsx';
+import Contact from './components/ContactPage/Contact.jsx';
+import { Warper } from './components/common/Warper.jsx';
 
-import Footer from './components/Footer'
-function App() {
+const App =() => {
  
 
   return (
     <>
    
     <Router> 
- <Navbar/> 
+
  
  
 
  <Routes>
-   <Route path='/' element= {  <HomePage/> }></Route> 
+   <Route path='/' element= {<Warper> <HomePage/> </Warper>  }></Route> 
   
-   <Route path='/Drink' element={ <DrinkPage/> } />
-   <Route path='/ClubPage' element={ <ClubPage/> } />
-   <Route path='/PayModel' element={ < Payment/> } ></Route>
+   <Route path='/Drink' element={<Warper> <DrinkPage/> </Warper> } />
+   <Route path='/ClubPage' element={<Warper isDark>  <ClubPage/> </Warper> } />
+   <Route path='/PayModel' element={ <Warper>  < Payment/> </Warper> } ></Route>
+   <Route path='/Contact' element={<Warper>  <Contact/> </Warper> }></Route>
 </Routes>
- <Footer/> 
+
  </Router>
 
   
@@ -39,4 +41,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
