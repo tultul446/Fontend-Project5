@@ -53,7 +53,7 @@ const style = {
           {/* Left Column */}
           
 
-          <div className="hidden md:block  bg-[url('./image38.png')] bg-cover bg-no-repeat  md:py-24 md:px-9 ">
+          <div className="hidden md:block bg-white   bg-cover bg-no-repeat  md:py-24 md:px-9 " style={{ backgroundImage:"url('/image38.png')"}}>
 
 
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Sign Up</h2>
